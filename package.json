@@ -1,0 +1,14 @@
+{
+  "name": "3187ca571290b487",
+  "main": "3187ca571290b487@26.js",
+  "version": "26.0.0",
+  "homepage": "https://observablehq.com/d/3187ca571290b487",
+  "author": {
+    "name": "melika",
+    "url": "https://observablehq.com/@melika2"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

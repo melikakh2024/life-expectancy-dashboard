@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Life Expectancy Dashboard</title>
-  <style>body { margin: 0; background: #1a1a2e; }</style>
-</head>
+<meta charset="utf-8">
+<title>Untitled</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
-  <div id="observablehq-main"></div>
-  <script type="module">
-    import {Runtime, Inspector} from "./runtime.js";
-    import notebook from "./index.js";
-    new Runtime().load(notebook, (name) => {
-      return new Inspector(document.querySelector("#observablehq-main"));
-    });
-  </script>
-</body>
-</html>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
